@@ -420,21 +420,20 @@ ul.skills {
 
 1、创建一个新的repository，命名为github用户名.github.io,并且将该repository设置为公开。
 
-<img src="C:\Github\PersonalWebPage\img\step1.png" alt="step1" style="zoom: 50%;" />
+<img src="./img/step1.png" alt="step1" style="zoom: 50%;" />
 
 2、在本地Desktop客户端打开该项目。
 
-<img src="C:\Github\PersonalWebPage\img\step2.png" alt="step2" style="zoom: 50%;" />
+<img src="./img/step2.png" alt="step2" style="zoom: 50%;" />
 
 3、将编辑完成的个人网页转移到该项目，或者创建一个新的index.html。
 
-<img src="C:\Github\PersonalWebPage\img\step3.png" alt="step3" style="zoom:50%;" />
+<img src="./img/step3.png" alt="step3" style="zoom:50%;" />
 
 4、Commit并且push。
 
-<img src="C:\Github\PersonalWebPage\img\step4.png" alt="step4" style="zoom:50%;" />
+<img src="./img/step4.png" alt="step4" style="zoom:50%;" />
 
 5、之后就可以通过http://username.github.io访问个人主页。
 
-<img src="C:\Github\PersonalWebPage\img\step5.png" alt="step5" style="zoom:50%;" />
-
+<img src="./img/step5.png" alt="step5" style="zoom:50%;" />
