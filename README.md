@@ -1,8 +1,10 @@
 # 个人网页设计报告
 
+[TOC]
 
 
-#### 1、整体设计：
+
+#### 1、整体设计
 
 我的个人网页分为6个部分，各个部分详细功能如下：
 
@@ -17,7 +19,7 @@
 
 #### 2、设计过程
 
-##### （1）导航栏：
+##### （1）导航栏
 
 为了使得导航栏的设计美观和简便，我引入了bootstrap关于导航的组件。
 
@@ -27,13 +29,13 @@
 
 [深入理解BootStrap Item11 -- 导航页（navbar）](https://blog.csdn.net/i10630226/article/details/49848841)
 
-###### 组件支持：
+###### 组件支持
 
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 ```
 
-###### 代码描述：
+###### 代码描述
 
 
 ```html
@@ -111,7 +113,7 @@
 
 
 
-###### 重要功能解释：
+###### 重要功能解释
 
 创建一个默认的导航栏的步骤如下：
 
@@ -132,11 +134,11 @@
   
   
 
-##### （2）About me：
+##### （2）About me
 
 展示个人基本信息，姓名、导师、研究兴趣、掌握技能等
 
-###### 组件支持：
+###### 组件支持
 
 ```html
 <!--为实现打字的动态展示jQuery first, then scipt.js, then typist JS-->
@@ -147,7 +149,7 @@
 <link rel="stylesheet" href="./css1.css"/>
 ```
 
-###### 代码描述：
+###### 代码描述
 
 <!--Html-->
 
@@ -244,7 +246,7 @@ ul.skills {
 
 
 
-###### 重要功能解释：
+###### 重要功能解释
 
 - HTML 标题（Heading）是通过<h1> - <h6> 标签来定义的.
 
@@ -260,7 +262,7 @@ ul.skills {
 
 - <li> 标签定义列表项目。<li> 标签可用在有序列表 (<ol>) 和无序列表 (<ul>) 中。
 
-##### （3) News：
+##### （3) News
 
 展示个人最近的动态新闻，如篮球比赛、出国交流、朋友聚会等
 
@@ -270,7 +272,7 @@ ul.skills {
 
 [**Bootstrap** **轮播（Carousel）插件**](https://www.cnblogs.com/storebook/p/8479990.html)
 
-###### 组件支持：
+###### 组件支持
 
 ```html
 <!--为实现图片轮播所需要的.js文件-->
@@ -278,9 +280,7 @@ ul.skills {
 <script src="js/bootstrap.min.js"></script>
 ```
 
-
-
-###### 代码描述：
+###### 代码描述
 
 ```html
 <section class="text-center">
@@ -322,7 +322,7 @@ ul.skills {
 </section>
 ```
 
-###### 重要功能解释：
+###### 重要功能解释
 
 - <img> 是空标签，意思是说，它只包含属性，并且没有闭合标签。 要在页面上显示图像，你需要使用源属性（src）。src 指 "source"。源属性的值是图像的 URL 地址。alt 属性用来为图像定义一串预备的可替换的文本。height（高度） 与 width（宽度）属性用于设置图像的高度与宽度。指定图像的高度和宽度是一个很好的习惯。如果图像指定了高度宽度，页面加载时就会保留指定的尺寸。如果没有指定图片的大小，加载页面时有可能会破坏HTML页面的整体布局。
 - Bootstrap 轮播（Carousel）插件是一种灵活的响应式的向站点添加滑块的方式。除此之外，内容也是足够灵活的，可以是图像、内嵌框架、视频或者其他您想要放置的任何类型的内容。如果您想要单独引用该插件的功能，则我们需要引用*bootstrap.min.js*
@@ -335,9 +335,11 @@ ul.skills {
 
 [**HTML5-表单**](https://cloud.tencent.com/developer/article/1487303)
 
-###### 组件支持：无
+###### 组件支持
 
-###### 代码描述：
+无
+
+###### 代码描述
 
 ```html
 <!--访客信息采集-->
@@ -391,6 +393,7 @@ ul.skills {
 ```
 
 ```CSS
+<!--CSS-->
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -437,3 +440,46 @@ ul.skills {
 5、之后就可以通过http://username.github.io访问个人主页。
 
 <img src="./img/step5.png" alt="step5" style="zoom:50%;" />
+
+#### 4、购买域名绑定Github
+
+###### 1.购买域名
+
+首先在腾讯云购买一个域名，比如我根据我的中英文名字买了一个域名：alanpeng.wang
+
+###### 2.在Github上绑定域名
+
+在仓库里添加CNAME文件并在文件中填写绑定的域名，文件里填写的内容：要绑定的域名（不要包含Http://和www），如下图：
+
+![CNAME](/img/CNAME.png)
+
+###### 3.添加域名解析
+
+ ping你的http://xxxxx.github.io域名，得到一个IP地址185.199.111.153；
+ windows操作系统下，快捷键win+R，然后输入cmd，弹出小黑框，然后输入ping lajipeng.github.io
+
+<img src="./img/ping+.png" alt="ping+" style="zoom:50%;" />
+
+###### 4.修改域名解析记录
+
+<img src="./img/解析域名.png" alt="解析域名" style="zoom: 67%;" />
+
+然后转到如下页面，选择添加记录。一个主机记录为：“www”，一个为“@”；添加两个都是A记录；并用得到的IP填到记录值一栏。
+
+<img src="./img/域名添加记录.png" alt="域名添加记录" style="zoom: 50%;" />
+
+###### 5.结果
+
+这样通过https://alanpeng.wang就能访问到我的个人了。
+ 比如输入https://lajipeng.github.io/，结果地址栏会自动跳转到https://alanpeng.wang
+
+#### 5、效果
+
+###### Android端
+
+<img src="./img/Android端效果.jpg" alt="Android端效果" style="zoom: 25%;" />
+
+###### PC端
+
+<img src="C:\Github\PersonalWebPage\img\PC端.png" alt="PC端" style="zoom:25%;" />
+
