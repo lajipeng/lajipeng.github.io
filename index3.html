@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PersonalWebPage of Alan</title>
+		<link rel="stylesheet" href="./css1.css"/>
+		<link rel="icon" type= "image" href="./img/fudan.png"/>
+
+		<!-- 需要从外部引入的文件CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- 需要从外部引入的js文件 -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<main>
+			<header class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- 导航栏 -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <!-- index.html展示的内容是about me -->  
+                      <a class="navbar-brand" href="index.html"><b>About me</b></a>
+                    </div>
+                           
+                    <!-- 收集用于切换的导航链接、表单和其他内容 -->
+                    <div class="collapse navbar-collapse" id="avbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <!-- 定义一个下拉框，用于下载简历 -->
+                            <li class="dropdown">
+                                <a href="https://github.com/lajipeng" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Download</b><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="./resources/wp.pdf" class="cvLink myResumeText">My Resume</a></li>
+                                </ul>
+                              <!-- index2.html的功能是展示我的动态 -->
+                           <li><a href="index2.html"><b>News</b></a></li>
+                            
+                           <!-- 展示我的Github主页 -->
+                           <li class="dropdown">
+                                <a href="https://github.com/lajipeng" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>GitHub Profile</b><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://github.com/lajipeng/DicomToMhd">DicomToMhd</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://github.com/lajipeng/Liver-image-registration-master">Liver-image-registration</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://github.com/lajipeng/Voice-Beautification">Voice-Beautification</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://github.com/lajipeng/exercise">Exercise for ML</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://github.com/lajipeng/Analysis-of-Median-Average-Gaussian-filter-on-denoising-">Analysis-of-Median-Average-Gaussian-filter-on-denoising</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                          <form class="navbar-form navbar-left" role="search">
+                              <div class="form-group">
+                              <!-- 搜索框 -->
+                                  <input type="text" class="form-control" placeholder="Search">
+                              </div>
+                              <!-- 提交按钮 -->
+                              <button type="submit" class="btn btn-default">Submit</button>
+                          </form>
+                                
+                          <!-- 另定义一个位于右边的导航栏 -->
+                          <ul class="nav navbar-nav navbar-right">
+                                <!-- 提供地理位置的谷歌链接 -->
+                                <li><a href="https://www.google.com/maps/place/中国上海市杨浦区五角场复旦大学科学楼/@31.2997737,121.500591,17z/data=!3m1!4b1!4m5!3m4!1s0x35b273cf62733217:0xbc57ffbf47d03162!8m2!3d31.2997737!4d121.502785?hl=zh-CN"><b>Directions</b></a></li>
+                                <!-- index3.html是收集访客信息的一个网页 -->
+                                <li class="dropdown">
+                                  <a href="index3.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Contact Me</b><span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#">Email - wangp16@fudan.edu.cn</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Phone - 18916593193</a></li>
+                                  </ul>
+                                </li>
+                          </ul>
+                    </div>
+                </div>
+            </nav>  
+        </header>
+ 
+      <!--访客信息采集-->
+      <section>
+          <br>
+          <h2 class="text-muted text-center">
+              Hello, welcome to my personal-web-page.please leave your contact information<br></br>
+              and what you want to tell me.
+          </h2>
+          <br></br>
+          <br></br>
+          <div class="container">
+              <div class="row">
+                      <div class="mt-3">
+                          <form>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="Your name">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input type="email"  class="form-control" placeholder="Your email address">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input type="tel"  class="form-control" placeholder="Phone number">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input type="url"  class="form-control" placeholder="Your website">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <textarea rows="5"  class="form-control" placeholder="Short summary of the work"></textarea>
+                                  </div>
+                                  <div class="text-center mt-3">
+                                  <button class="btn btn-primary">Get A Free Quote</button>
+                              </div>
+                                  </div>
+                              </div>
+                          </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+	</body>
+</html>

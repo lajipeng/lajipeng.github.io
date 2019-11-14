@@ -1,0 +1,48 @@
+/* 定义背景、字体、对齐方式 */
+body{
+		background: url(./img/Background.jpg);
+		background-size: cover;
+		color: purple;
+		font-family: sans-serif;
+		text-align: center;
+
+}
+
+/* Skills的方框展示效果 */
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+/* 定义照片格式 */
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+.rounded-circle {
+  border-radius: 50% !important; }
+.img-profile {
+  max-width: 175px; }
+.my-4 {
+  margin-top: 1.5rem !important; }
+  
+  
+/* 底部的层叠样式定义 */
+footer{
+	position:absolute;
+	bottom:2%;
+	left:45%;
+}
+
+
