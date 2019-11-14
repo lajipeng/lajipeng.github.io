@@ -1,6 +1,6 @@
 # 个人网页设计报告
 
-[TOC]
+
 
 #### 1、整体设计：
 
@@ -11,7 +11,7 @@
 | About me       | 展示个人基本信息，姓名、导师、研究兴趣、掌握技能等       |
 | Download       | 提供下载个人简历、个人陈述的链接                         |
 | News           | 展示个人最近的动态新闻，如篮球比赛、出国交流、朋友聚会等 |
-| Github Profile | 展示我的GitHub主页，下拉框展示一些有贡献的项目           |
+| Github Profile | 展示我的Github主页，下拉框展示一些有贡献的项目           |
 | Directions     | 展示我的办公地点的地理位置                               |
 | Contact me     | 对来客信息进行统计、提供联系方式                         |
 
@@ -110,6 +110,7 @@
 ```
 
 
+
 ###### 重要功能解释：
 
 创建一个默认的导航栏的步骤如下：
@@ -128,6 +129,7 @@
 
 - .container类出现内边距和外边距，.container-fluid类没有。
 - .container类左右内边距一直是15px，屏幕小于等于767px的时候没有margin值，屏幕大于767px开始有左右margin值，屏幕宽度为768px和1000px的时候，margin值相对最小，分别是9px和15px，其他时候margin值随着屏幕的增大而增大。.container-fluid类宽度不管屏幕宽度大小，一直是100%。
+  
   
 
 ##### （2）About me：
@@ -180,6 +182,67 @@
 ```
 
 <!--CSS-->
+
+```css
+<!--在处理个人照片用到的css样式规定-->
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+.rounded-circle {
+  border-radius: 50% !important; }
+.img-profile {
+  max-width: 175px; }
+/* Skills的方框展示效果 */
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+/* 展现打字过程 */
+@keyframes blink {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+.typist .selectedText {
+  display: none; }
+
+.typist:after {
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  height: 30px;
+  margin-left: 5px;
+  content: " ";
+  -webkit-animation: blink .5s step-end infinite alternate;
+  animation: blink .5s step-end infinite alternate;
+  border-right: 2px solid; }
+```
+
+
 
 ###### 重要功能解释：
 
@@ -275,3 +338,103 @@
 ###### 组件支持：无
 
 ###### 代码描述：
+
+```html
+<!--访客信息采集-->
+<section>
+    <br>
+    <h2 class="text-muted text-center">
+		Hello, welcome to my personal-web-page.please leave your contact information<br>	</br>
+        and what you want to tell me.
+	</h2>
+    <br></br>
+    <br></br>
+	<div class="container">
+		<div class="row">
+				<div>
+					<form>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email"  class="form-control" placeholder="Your email address">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="tel"  class="form-control" placeholder="Phone number">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="url"  class="form-control" placeholder="Your website">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<textarea rows="5"  class="form-control" placeholder="Short summary of the work"></textarea>
+							</div>
+                            <div class="text-center">
+							<button class="btn btn-primary">Get A Free Quote</button>
+						</div>
+							</div>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</section>
+```
+
+```CSS
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  
+.col-md-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  
+.form-group {
+  margin-bottom: 1rem; }
+```
+
+
+
+###### 重要功能解释：
+
+- <form>定义一个表单，.row,.col-md-6,.form-group class定义输入框格式，input可指定输入内容的格式
+
+#### 3、Github上传网页
+
+1、创建一个新的repository，命名为github用户名.github.io,并且将该repository设置为公开。
+
+<img src="C:\Github\PersonalWebPage\img\step1.png" alt="step1" style="zoom: 50%;" />
+
+2、在本地Desktop客户端打开该项目。
+
+<img src="C:\Github\PersonalWebPage\img\step2.png" alt="step2" style="zoom: 50%;" />
+
+3、将编辑完成的个人网页转移到该项目，或者创建一个新的index.html。
+
+<img src="C:\Github\PersonalWebPage\img\step3.png" alt="step3" style="zoom:50%;" />
+
+4、Commit并且push。
+
+<img src="C:\Github\PersonalWebPage\img\step4.png" alt="step4" style="zoom:50%;" />
+
+5、之后就可以通过http://username.github.io访问个人主页。
+
+<img src="C:\Github\PersonalWebPage\img\step5.png" alt="step5" style="zoom:50%;" />
+
