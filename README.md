@@ -1,5 +1,9 @@
 # 个人网页设计报告
 
+源码：https://github.com/lajipeng/lajipeng.github.io
+
+链接：https://alanpeng.wang
+
 [TOC]
 
 
@@ -59,14 +63,14 @@
 				<ul class="nav navbar-nav">
                     <!-- 定义一个下拉框，用于下载简历 -->
 				    <li class="dropdown">
-				    	<a href="https://github.com/lajipeng" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Download</b><span class="caret"></span></a>
+				    	<a href="./resources/resume.pdf" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Download</b><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                           <li><a href="./resources/wp.pdf" class="cvLink myResumeText">My Resume</a></li>
                         </ul>
-                      <!-- index2.html的功能是展示我的动态 -->
+                   <!-- index2.html的功能是展示我的动态 -->
 				   <li><a href="index2.html"><b>News</b></a></li>
                     
-                   <!-- 展示我的Github主页 -->
+                   <!-- 展示我的Github主页以及一些比较重要的GitHub项目 -->
 				   <li class="dropdown">
 				   		<a href="https://github.com/lajipeng" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>GitHub Profile</b><span class="caret"></span></a>
 				        <ul class="dropdown-menu">
@@ -246,7 +250,9 @@ ul.skills {
 
 
 
-###### 重要功能解释
+###### 重要功能解释：
+
+HTML：
 
 - HTML 标题（Heading）是通过<h1> - <h6> 标签来定义的.
 
@@ -261,6 +267,13 @@ ul.skills {
 - <a> 标签定义超链接，用于从一张页面链接到另一张页面。<a> 元素最重要的属性是 href 属性，它指示链接的目标。
 
 - <li> 标签定义列表项目。<li> 标签可用在有序列表 (<ol>) 和无序列表 (<ul>) 中。
+
+CSS：
+
+- CSS 指层叠样式表 (*C*ascading *S*tyle *S*heets)
+- 样式定义*如何显示* HTML 元素
+- 样式通常存储在*样式表*中
+- CSS各种元素定义参考：[**CSS 参考手册**](https://www.w3school.com.cn/css/css_reference.asp)
 
 ##### （3) News
 
@@ -296,7 +309,7 @@ ul.skills {
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                	<h1>Participat in the exchange activity of Fudan university</h1>
+                	<h1>Participate in the exchange activity of Fudan university</h1>
                  	<a style="cursor:pointer"><img src="./img/1.jpg" alt='1' style="margin-left:25%" width="800" height="600"></a>
                 </div>
                 <div class="item">
@@ -473,7 +486,7 @@ ul.skills {
 这样通过https://alanpeng.wang就能访问到我的个人网页了。
  比如输入https://lajipeng.github.io/，结果地址栏会自动跳转到https://alanpeng.wang
 
-#### 5、效果
+#### 5、设计效果
 
 ###### Android端
 
@@ -481,5 +494,26 @@ ul.skills {
 
 ###### PC端
 
-<img src="C:\Github\PersonalWebPage\img\PC端.png" alt="PC端" style="zoom:25%;" />
+<img src="./img/PC端.png" alt="PC端" style="zoom: 25%;" />
 
+<img src="./img/news展示.png" alt="news展示" style="zoom: 33%;" />
+
+<img src="./img/Contact_me展示.png" alt="Contact_me展示" style="zoom:50%;" />
+
+#### 6、设计总结
+
+设计个人网页是一个非常有趣但是麻烦的过程，设计网页很简单，但是要做一个好看实用的个人网页并不简单。
+
+我的设计过程基本如下：
+
+首先我通过浏览大量的个人网页源代码，基本确定自己想要的网页主题和内容，主题要简单没有任何冗余，内容需要包括基本个人介绍、简历、生活介绍、联系信息、Github主页。
+
+之后我花费了很多时间寻找我要的网页主题，在CSDN上了解到很多人会选择使用bootstrap，因为这样的插件就好像python的库一样，只需要通过简单的调用就可以实现良好的布局，因此我导航栏就完全用bootstrap实现，一些动态展示效果比如打字、轮播也是用的bootstrap，其余内容通过html和css描述就基本能完全实现。
+
+编辑器我采用的是Dreamweaver，他可以将html和css的关系表示出来，因此我可以通过这种方式去研究别人的代码是什么思想，将这种思想应用到我自己的网页中来。
+
+考虑到个人网页在PC端和Android端的兼容性，我基本采用了内容居中。
+
+基本确定网页内容之后，我开始配置个人域名和上传网页，通过这个过程也帮助了我对计算机网络理解更加深入，而且我认为这份课程设计的深度还不够，我仍然需要进行更多的实践去理解计算机网络这么课程。
+
+写在最后：我个人非常支持开源，因此本次设计的一些经验我会都分享在博客和Github上面。
