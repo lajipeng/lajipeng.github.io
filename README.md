@@ -470,7 +470,7 @@ ul.skills {
 
 ###### 5.结果
 
-这样通过https://alanpeng.wang就能访问到我的个人了。
+这样通过https://alanpeng.wang就能访问到我的个人网页了。
  比如输入https://lajipeng.github.io/，结果地址栏会自动跳转到https://alanpeng.wang
 
 #### 5、效果
